@@ -13,8 +13,7 @@ Usage
 ---
 Clone the Github repository
 ```
-git clone https://github.com/xumeishan0527/Udacity_project.git
-cd memory_game
+git clone https://github.com/xumeishan0527/memory_game.git
 ```
 License
 ---

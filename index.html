@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="container" id="container">
+    <header><!--标题-->
+        <h1>Matching Game</h1>
+    </header>
+
+    <section class="score-panel"><!--星星及重置按钮-->
+        <ul class="stars" id="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="moves" id="moves">3</span>
+
+        <div class="restart" id="restart">
+            <i class="fa fa-repeat"></i>
+        </div>
+    </section>
+
+    <section class="useInf"><!--显示步数、倒计时以及用时-->
+        <div id="stepNumber">step number is: 0</div>
+        <input id="getTime" class="uesTime">
+    </section>
+
+    <ul class="deck" id="deck"><!--卡片模块-->
+        <li class="card"><!--各卡片单元-->
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-diamond"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front show">
+                    <i class="fa fa-paper-plane-o"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-bomb"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-bolt"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-cube"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-anchor"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-anchor"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-bicycle"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                    <i class="fa fa-diamond"></i>
+                </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-bomb"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-bolt"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-bicycle"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-paper-plane-o"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-cube"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-leaf"></i>
+            </pre>
+        </li>
+        <li class="card">
+            <pre class="card_back"></pre>
+            <pre class="card_front">
+                <i class="fa fa-leaf"></i>
+            </pre>
+        </li>
+    </ul>
+</div>
+
+<div class="shade" id="shade"><!--挑战成功弹窗-->
+    <div class="shadeContent">
+        <p>恭喜过关</p>
+        <p id="shadeContentTime">用时：0分01秒015毫秒</p>
+        <p id="shadeContentStars">评分：</p>
+        <div>
+            <button id="recur">再挑战一次</button>
+            <button id="stop">不了，谢谢</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/app-o.js"></script>
+</body>
+</html>

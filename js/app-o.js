@@ -81,7 +81,6 @@ Game.prototype.restart = function () {
 
     this.init();
 
-
     /*方法二：简单明了*/
     // window.location.reload();
 
